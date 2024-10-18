@@ -1,6 +1,9 @@
 *{
     font-family: "work sans";
 }
+button{
+    cursor: pointer;
+}
 header{
     margin-bottom: 300px;
 }
@@ -84,19 +87,24 @@ i{
     color: rgba(0, 0, 0, .7);
 }
 
-.under{
+.last-img{
+    display: flex;
+    justify-content: center;
+}
+.last-img img{
+    background-image: url("../images/watch.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 100;
+}
+.last{
     position: relative;
 }
-.up{
-    position: absolute;
-    top: 50px
-}
-
-
 .last-text{
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 20px;
+    left: 200px;
+    z-index: 1001;
 }
 .last-text h2{
     font-size: 40px;
@@ -109,4 +117,26 @@ i{
     background-color: white ;
     color: #F15B22;
     font-weight: 600;
+}
+
+footer{
+    padding: 150px 15%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #151414;
+    color: white;
+
+
+}
+
+.input input{
+    display: block;
+    margin: 25px 0;
+    background-color: transparent;
+    font-size: 18px;
+    border: 1px solid white;
+    padding: 15px;
+    color: white;
+
 }
